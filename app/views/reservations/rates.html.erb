@@ -1,0 +1,48 @@
+<h2 class="m30">New reservation</h1>
+
+<%= form_for @reservation do |f| %>
+    <div class="form-group">
+        <%= f.label :arrival_date %>
+        <%= f.date_field :arrival_date, class: "form-control" %>
+    </div>
+
+    <div class="form-group">
+        <%= f.label :days%>
+        <%= f.number_field :num_days, class: "form-control" %>
+    </div>
+
+    <div class="form-group">
+        <%= f.label :depature_date %>
+        <%= f.date_field :depature_date, class: "form-control" %>
+    </div>
+<% end %>
+
+<div class="m30"></div>
+
+<table class="table table-sm table-bordered">
+    <thead>
+        <tr>
+            <th style="visibility:hidden"></th>
+            <th class="text-light bg-danger">T2Q [-3]</td>
+            <th class="text-light bg-success">TKG [12]</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>BAR</td>
+            <td>$500.00</td>
+            <td>$500.00</td>
+        </tr>
+        <tr>
+            <td>AAA</td>
+            <td>$500.00</td>
+            <td>$500.00</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="text-right">
+    <button class="btn btn-danger">Cancel</button>
+    <button class="btn btn-primary">Create Reservation</button>
+</div>

@@ -4,7 +4,7 @@ function todaysDate() {
 
 }
 
-$('document').ready(function() {
+$(document).on('turbolinks:load', function() {
     let utils = new Utils();
 
     let arrivalDate = $('#new_reservation input[type="date"]')[0];

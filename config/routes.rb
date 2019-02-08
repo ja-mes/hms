@@ -4,4 +4,8 @@ Rails.application.routes.draw do
   root 'pages#index'
 
   resources "reservations"
+
+  #get '/reservations/rates', to: 'reservations#rates', as: 'reservation_rates'
+
+  get 'rates', action: :rates, controller: 'reservations'
 end
