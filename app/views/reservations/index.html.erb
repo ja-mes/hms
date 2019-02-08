@@ -1,1 +1,21 @@
-<h2>Reservations</h2>
+<div class="row">
+    <div class="col-md">
+        <h2 class="m30">Reservations</h2>
+    </div>
+
+    <div class="col-md text-right">
+        <%= link_to "New Reservation", new_reservation_path, class: "btn btn-primary" %> 
+    </div>
+</div>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Arrivals</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">In House</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">All Reservations</a>
+  </li>
+</ul>
